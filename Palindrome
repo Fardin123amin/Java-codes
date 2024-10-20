@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Palindrome
+{
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        
+        int a;
+    
+        System.out.println("Enter the no to check whether it is palindrome or not");
+        a=in.nextInt();
+        int temp=a;
+        
+        while(a>0)
+        {
+            int ld=ld%10;
+            int sum=sum*10+ld;
+            a=a/10;
+            
+        }
+        if(sum==temp)
+        System.out.println("The no is palindrome");
+        else
+        System.out.println("The no is not palindrome");
+    }
+}
