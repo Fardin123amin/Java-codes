@@ -1,0 +1,21 @@
+// reverse a string
+// Hello -> olleH
+
+import java.util.Scanner;
+public class String1{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        String st,st1="";
+        System.out.println("Enter a string");
+        st=in.nextLine();
+        int len=st.length();
+        
+        for(int i=0;i<len;i++)
+        {
+            st1=st.charAt(i)+st1;
+        }
+        System.out.println("Old unreversed string: "+st);
+        System.out.println("New reversed string : "+st1);
+    }
+}
