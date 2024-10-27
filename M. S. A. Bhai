@@ -1,0 +1,27 @@
+// Enter full name <ex: Md Fardin Amin>
+// Md shah alam bhai
+// M. s. a. bhai
+
+import java.util.Scanner;
+public class String1{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        String s,str="";
+        System.out.println("Enter full name <ex: Md Fardin Amin>");
+        s=in.nextLine();
+        
+        String s1=" "+s;
+        int ll=s1.lastIndexOf(" ");
+        for(int i=0;i<s1.length();i++)
+        {
+            if(s1.charAt(i)==' ' && i!=ll)
+            {
+                str=str+s1.substring(i+1,i+2)+". ";
+            }
+        }
+    
+        
+        System.out.println(str+s.substring(s.lastIndexOf(" ")+1));
+    }
+}
